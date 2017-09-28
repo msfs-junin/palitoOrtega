@@ -17,7 +17,10 @@ class Juego
    end
 
    def ganador
-      return "Gana Humano"
+      if @humano.resultado == "Tijera" && @maquina.resultado == "Piedra"
+      return "Gana Computadora"   
+      elsif @humano.resultado == "Papel" && @maquina.resultado == "Piedra"
+      return "Gana Humano"       
+end  
    end
-
 end 

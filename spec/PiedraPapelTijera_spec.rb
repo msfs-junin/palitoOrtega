@@ -10,4 +10,14 @@ describe "PiedraPapelYTijera" do
      juego.maquina.setResultado("Piedra")
      juego.ganador.should == "Gana Humano"
    end
+   
+
+   it "Humano elige tijera, computadora elige piedra, gana piedra" do
+     juego = Juego.new
+     juego.humano.setResultado("Tijera")
+     juego.maquina.setResultado("Piedra")
+     juego.ganador.should == "Gana Computadora"
+   end
+
+
 end
