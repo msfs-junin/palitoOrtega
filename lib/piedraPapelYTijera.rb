@@ -1,5 +1,5 @@
-require "../lib/Humano.rb"
-require "../lib/Maquina.rb"
+require "./lib/Humano.rb"
+require "./lib/Maquina.rb"
 
 class Juego 
 

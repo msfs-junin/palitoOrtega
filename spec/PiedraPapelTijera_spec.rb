@@ -1,6 +1,6 @@
-require "../lib/piedraPapelYTijera.rb"
-require "../lib/Humano.rb"
-require "../lib/Maquina.rb"
+require "./lib/piedraPapelYTijera.rb"
+require "./lib/Humano.rb"
+require "./lib/Maquina.rb"
 
 describe "PiedraPapelYTijera" do
 
