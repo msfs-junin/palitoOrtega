@@ -1,4 +1,5 @@
 require 'sinatra'
+require './lib/piedraPapelYTijera.rb'
 
 get '/' do
     erb :principal
@@ -16,4 +17,8 @@ post '/jugadorAPapel' do
     @opcionJugadorA = "Papel"
     @opcionJugadorB = "Piedra"
     erb :juego
+end
+
+get '/resultado' do
+   erb :mensajeGanador
 end

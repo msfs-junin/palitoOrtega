@@ -14,4 +14,8 @@ Given(/^Una vez elegida la opcion papel$/) do
  click_button("Papel")
 end
 
+When(/^Una vez elegido ver resultado$/) do
+   visit '/resultado'
+end
+
 

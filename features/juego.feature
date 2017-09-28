@@ -18,4 +18,10 @@ Scenario:Debe poder verse la eleccion de la computadora
 	When Una vez elegida la opcion papel
 	Then tiene que aparecer "Opcion Oponente: Piedra"
 
+Scenario:Debe verse mensaje ganador
+	Given Una vez iniciado el juego
+	When Una vez elegida la opcion papel
+   When Una vez elegido ver resultado
+	Then tiene que aparecer "Mensaje: Gana Humano"
+
 
