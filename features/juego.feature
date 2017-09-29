@@ -41,3 +41,9 @@ Scenario:Debe poder verse la opcion reset
 	Given Una vez iniciado el juego
 	Then tiene que aparecer "Reset"
 
+Scenario:Al hacer click en el opcion reset me debe llevar a la pantalla de inicio
+	Given Una vez iniciado el juego
+	When presiono "Reset"	
+	Then tiene que aparecer "Iniciar Juego"
+
+

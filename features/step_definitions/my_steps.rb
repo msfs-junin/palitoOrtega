@@ -18,4 +18,7 @@ When(/^Una vez elegido ver resultado$/) do
    visit '/resultado'
 end
 
+When /^presiono "(.*?)"$/ do |reset|
+  click_button(reset)
+end
 
