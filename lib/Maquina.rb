@@ -2,6 +2,7 @@ class Maquina
 
    def initialize
       @resultado ="Piedra"
+      @puntaje = 0
    end
 
    def setResultado(valor)
@@ -15,5 +16,14 @@ class Maquina
    def resultado
       return @resultado
    end
+
+   def puntaje
+      return @puntaje
+   end
+
+   def setPuntaje(valor)
+      @puntaje = valor
+   end
+
 
 end

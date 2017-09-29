@@ -20,4 +20,9 @@ class Humano
    def puntaje
       return @puntaje
    end
+
+   def setPuntaje(valor)
+      @puntaje = valor
+   end
+      
 end

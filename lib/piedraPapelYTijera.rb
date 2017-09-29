@@ -36,4 +36,10 @@ class Juego
         return "Empate" 
       end  
    end
+
+   def reiniciar
+     @humano.setPuntaje(0)
+     @maquina.setPuntaje(0)
+   end
+
 end 

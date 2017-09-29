@@ -86,4 +86,14 @@ describe "PiedraPapelYTijera" do
      juego.ganador
      juego.humano.puntaje.should == 2
    end
+
+   it "Reinicio de juego, marcador 0 a 0" do
+     juego = Juego.new
+     juego.humano.setResultado("Tijera")
+     juego.maquina.setResultado("Papel")
+     juego.ganador
+     juego.reiniciar
+     juego.humano.puntaje.should == 0 && juego.maquina.puntaje.should == 0 
+   end
+
 end
