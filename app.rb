@@ -25,3 +25,4 @@ post '/jugadorA/:jugada' do
     erb :juego
 end
 
+

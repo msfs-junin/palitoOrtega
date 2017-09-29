@@ -1,24 +1,44 @@
 <h1>A jugar!</h1>
 
-<form method="post" action="/jugadorA/Papel">
-   <input type="submit" value="Papel">
 
-</form>
+
+<div style="display:inline-block">
+<div style="float:left">
 <form method="post" action="/jugadorA/Piedra">
-   <input type="submit" value="Piedra">	
+  <input type="image" src="/Piedra.jpg" value="Piedra" style="width:150px;">
 </form>
+</div>
 
+<div style="float:right">
+<form method="post" action="/jugadorA/Papel">
+   <input type="image" src="/Papel.jpg" value="Papel" style="width:150px;">
+</form>
+</div>
+
+<div style="float:right">
 <form method="post" action="/jugadorA/Tijera">
-   <input type="submit" value="Tijera">	
+   <input type="image" src="/Tijera.jpg" value="Tijera" style="width:150px;">
+</div>
 </form>
+</div>
 
+<br>
 <b>Opcion Elegida: <%= @opcionJugadorA %></b>
 <br>
+
+
+
+<br>
+<input type="image" src="/<%= @opcionJugadorB %>.jpg" value="<%= @opcionJugadorB %>" style="width:150px;">
+<br>
 <b>Opcion Oponente: <%= @opcionJugadorB %></b>
+
+
+
 <br>
 <b>Resultado: <%= @resultado %></b>
 <br>
-
+<br>
 <form method="get" action="/">
    <input type="submit" value="Reset">
 </form>
