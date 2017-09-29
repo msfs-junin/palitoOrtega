@@ -2,6 +2,8 @@ require 'sinatra'
 require './lib/piedraPapelYTijera.rb'
 
 get '/' do
+	@@juego = Juego.new	
+	@@juego.maquina.setResultadoRandom
     erb :principal
 end
 
@@ -13,32 +15,13 @@ post '/juego' do
     erb :juego
 end
 
-post '/jugadorAPapel' do
-    juego = Juego.new
-	juego.humano.setResultado("Papel")
-    juego.maquina.setResultado("Piedra")
-    @opcionJugadorA = "Papel"
-    @opcionJugadorB = "Piedra"
-    @resultado =  juego.ganador
+post '/jugadorA/:jugada' do
+    jugada = params["jugada"]
+	@@juego.humano.setResultado(jugada)    
+    @opcionJugadorA = jugada
+    @opcionJugadorB = @@juego.maquina.resultado
+    @resultado =  @@juego.ganador
+	@@juego.maquina.setResultadoRandom
     erb :juego
 end
 
-post '/jugadorATijera' do
-    juego = Juego.new
-	juego.humano.setResultado("Tijera")
-    juego.maquina.setResultado("Piedra")
-    @opcionJugadorA = "Tijera"
-    @opcionJugadorB = "Piedra"
-    @resultado =  juego.ganador
-    erb :juego
-end
-
-post '/jugadorAPiedra' do
-    juego = Juego.new
-	juego.humano.setResultado("Piedra")
-    juego.maquina.setResultado("Piedra")
-    @opcionJugadorA = "Piedra"
-    @opcionJugadorB = "Piedra"
-    @resultado =  juego.ganador
-    erb :juego
-end

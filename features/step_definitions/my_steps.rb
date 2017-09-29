@@ -32,4 +32,8 @@ When /^presiono "(.*?)"$/ do |reset|
   click_button(reset)
 end
 
+Given(/^la computadora elige "(.*?)"$/) do |mano|
+  @@juego.maquina.setResultado mano
+end
+
 

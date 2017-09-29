@@ -1,20 +1,21 @@
 <h1>A jugar!</h1>
 
-<form method="post" action="/jugadorAPapel">
+<form method="post" action="/jugadorA/Papel">
    <input type="submit" value="Papel">
 
 </form>
-<form method="post" action="/jugadorAPiedra">
+<form method="post" action="/jugadorA/Piedra">
    <input type="submit" value="Piedra">	
 </form>
 
-<form method="post" action="/jugadorATijera">
+<form method="post" action="/jugadorA/Tijera">
    <input type="submit" value="Tijera">	
 </form>
 
 <b>Opcion Elegida: <%= @opcionJugadorA %></b>
 <br>
 <b>Opcion Oponente: <%= @opcionJugadorB %></b>
+<br>
 <b>Resultado: <%= @resultado %></b>
 <br>
 

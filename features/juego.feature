@@ -15,11 +15,13 @@ Scenario:Debe poder elegirse la opcion papel
 
 Scenario:Debe poder verse la eleccion de la computadora	
 	Given Una vez iniciado el juego
+	And la computadora elige "Piedra"
 	When Una vez elegida la opcion papel
 	Then tiene que aparecer "Opcion Oponente: Piedra"
 
 Scenario:Debe verse mensaje ganador
 	Given Una vez iniciado el juego
+	And la computadora elige "Piedra"
 	When Una vez elegida la opcion papel
 	Then tiene que aparecer "Resultado: Gana Humano"
 
@@ -44,12 +46,14 @@ Scenario:Debe poder verse la opcion reset
 
 Scenario:Debe verse mensaje perdedor
 	Given Una vez iniciado el juego
+	And la computadora elige "Piedra"
 	When Una vez elegida la opcion tijera
 	Then tiene que aparecer "Resultado: Gana Computadora"
 
 
 Scenario:Debe verse mensaje empate
 	Given Una vez iniciado el juego
+	And la computadora elige "Piedra"
 	When Una vez elegida la opcion piedra
 	Then tiene que aparecer "Resultado: Empate"
 
@@ -59,5 +63,10 @@ Scenario:Al hacer click en el opcion reset me debe llevar a la pantalla de inici
 	When presiono "Reset"	
 	Then tiene que aparecer "Iniciar Juego"
 
+Scenario:Debe verse mensaje ganador
+	Given Una vez iniciado el juego
+	And la computadora elige "Tijera"
+	When Una vez elegida la opcion piedra
+	Then tiene que aparecer "Resultado: Gana Humano"
 
 
