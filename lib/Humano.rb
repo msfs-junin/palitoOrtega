@@ -2,6 +2,7 @@ class Humano
 
    def initialize
       @resultado ="Papel"
+      @puntaje = 0
    end
 
    def setResultado(valor)
@@ -10,6 +11,13 @@ class Humano
 
    def resultado
       return @resultado
+   end   
+
+   def sumarPunto
+     return @puntaje = @puntaje + 1
    end
 
+   def puntaje
+      return @puntaje
+   end
 end

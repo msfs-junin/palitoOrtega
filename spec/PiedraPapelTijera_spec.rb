@@ -68,5 +68,22 @@ describe "PiedraPapelYTijera" do
      juego.ganador.should == "Empate"
    end
 
+ it "Gana Humano, suma un punto" do
+     juego = Juego.new
+     juego.humano.setResultado("Tijera")
+     juego.maquina.setResultado("Papel")
+     juego.ganador
+     juego.humano.puntaje.should == 1
+   end
 
+ it "Gana Humano Gana Humano, suma dos puntos" do
+     juego = Juego.new
+     juego.humano.setResultado("Tijera")
+     juego.maquina.setResultado("Papel")
+     juego.ganador
+     juego.humano.setResultado("Papel")
+     juego.maquina.setResultado("Piedra")
+     juego.ganador
+     juego.humano.puntaje.should == 2
+   end
 end
