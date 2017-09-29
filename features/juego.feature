@@ -41,3 +41,14 @@ Scenario:Debe poder verse la opcion reset
 	Given Una vez iniciado el juego
 	Then tiene que aparecer "Reset"
 
+Scenario:Debe verse mensaje perdedor
+	Given Una vez iniciado el juego
+	When Una vez elegida la opcion tijera
+	Then tiene que aparecer "Resultado: Gana Computadora"
+
+
+Scenario:Debe verse mensaje empate
+	Given Una vez iniciado el juego
+	When Una vez elegida la opcion piedra
+	Then tiene que aparecer "Resultado: Empate"
+
