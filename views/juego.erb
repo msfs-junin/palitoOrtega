@@ -1,23 +1,37 @@
-<h1>A jugar!</h1>
+<style>
+   .contenedor-principal{
+      border: 20px solid #3399ff;
+      height: 500px;
+      text-align: center;
+   }
+   h1{
+      color: #3399ff;
+      font-size: 25px;
+   }
+</style>
+
+<div class="contenedor-principal">
+
+<h1>¡ A JUGAR !</h1>
 
 
 
 <div style="display:inline-block">
 <div style="float:left">
 <form method="post" action="/jugadorA/Piedra">
-  <input type="image" src="/Piedra.jpg" value="Piedra" style="width:150px;">
+  <input type="image" src="/Piedra.jpg" value="Piedra" style="width:145px;height:145px;">
 </form>
 </div>
 
 <div style="float:right">
 <form method="post" action="/jugadorA/Papel">
-   <input type="image" src="/Papel.jpg" value="Papel" style="width:150px;">
+   <input type="image" src="/Papel.jpg" value="Papel" style="width:145px;height:145px;">
 </form>
 </div>
 
 <div style="float:right">
 <form method="post" action="/jugadorA/Tijera">
-   <input type="image" src="/Tijera.jpg" value="Tijera" style="width:150px;">
+   <input type="image" src="/Tijera.jpg" value="Tijera" style="width:145px;height:145px;">
 </div>
 </form>
 </div>
@@ -42,3 +56,4 @@
 <form method="get" action="/">
    <input type="submit" value="Reset">
 </form>
+</div>
