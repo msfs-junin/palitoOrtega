@@ -18,17 +18,17 @@ class Juego
 
    def ganador
       if @humano.resultado == "Tijera" && @maquina.resultado == "Piedra"
-      return "Gana Computadora"   
+      return "¡Perdiste!"   
       elsif @humano.resultado == "Papel" && @maquina.resultado == "Piedra"
-      return "Gana Humano" 
+      return "¡Ganaste!" 
       elsif @humano.resultado == "Tijera" && @maquina.resultado == "Papel"
-      return "Gana Humano"
+      return "¡Ganaste!"
       elsif @humano.resultado == "Papel" && @maquina.resultado == "Tijera"
-      return "Gana Computadora"      
+      return "¡Perdiste!"      
       elsif @humano.resultado == "Piedra" && @maquina.resultado == "Tijera"
-      return "Gana Humano"   
+      return "¡Ganaste!"   
 elsif @humano.resultado == "Piedra" && @maquina.resultado == "Papel"
-      return "Gana Computadora" 
+      return "¡Perdiste!" 
 elsif @humano.resultado == @maquina.resultado 
       return "Empate" 
 end  

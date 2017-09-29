@@ -23,7 +23,7 @@ Scenario:Debe verse mensaje ganador
 	Given Una vez iniciado el juego
 	And la computadora elige "Piedra"
 	When Una vez elegida la opcion papel
-	Then tiene que aparecer "Resultado: Gana Humano"
+	Then tiene que aparecer "Resultado: ¡Ganaste!"
 
 Scenario:Debe poder verse la opcion piedra
 	Given Una vez iniciado el juego
@@ -48,7 +48,7 @@ Scenario:Debe verse mensaje perdedor
 	Given Una vez iniciado el juego
 	And la computadora elige "Piedra"
 	When Una vez elegida la opcion tijera
-	Then tiene que aparecer "Resultado: Gana Computadora"
+	Then tiene que aparecer "Resultado: ¡Perdiste!"
 
 
 Scenario:Debe verse mensaje empate
@@ -67,6 +67,6 @@ Scenario:Debe verse mensaje ganador
 	Given Una vez iniciado el juego
 	And la computadora elige "Tijera"
 	When Una vez elegida la opcion piedra
-	Then tiene que aparecer "Resultado: Gana Humano"
+	Then tiene que aparecer "Resultado: ¡Ganaste!"
 
 
