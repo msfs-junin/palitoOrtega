@@ -41,6 +41,7 @@ Scenario:Debe poder verse la opcion reset
 	Given Una vez iniciado el juego
 	Then tiene que aparecer "Reset"
 
+
 Scenario:Debe verse mensaje perdedor
 	Given Una vez iniciado el juego
 	When Una vez elegida la opcion tijera
@@ -51,4 +52,12 @@ Scenario:Debe verse mensaje empate
 	Given Una vez iniciado el juego
 	When Una vez elegida la opcion piedra
 	Then tiene que aparecer "Resultado: Empate"
+
+
+Scenario:Al hacer click en el opcion reset me debe llevar a la pantalla de inicio
+	Given Una vez iniciado el juego
+	When presiono "Reset"	
+	Then tiene que aparecer "Iniciar Juego"
+
+
 

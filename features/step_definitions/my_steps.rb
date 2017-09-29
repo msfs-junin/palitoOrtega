@@ -18,6 +18,7 @@ When(/^Una vez elegido ver resultado$/) do
    visit '/resultado'
 end
 
+
 When(/^Una vez elegida la opcion tijera$/) do
   click_button("Tijera")
 end
@@ -27,5 +28,8 @@ When(/^Una vez elegida la opcion piedra$/) do
 end
 
 
+When /^presiono "(.*?)"$/ do |reset|
+  click_button(reset)
+end
 
 
