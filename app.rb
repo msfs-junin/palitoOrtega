@@ -16,9 +16,8 @@ end
 post '/jugadorAPapel' do
     @opcionJugadorA = "Papel"
     @opcionJugadorB = "Piedra"
+    @resultado = "Gana Humano"
     erb :juego
 end
 
-get '/resultado' do
-   erb :mensajeGanador
-end
+

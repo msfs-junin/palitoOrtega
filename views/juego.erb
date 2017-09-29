@@ -1,9 +1,17 @@
 <h1>A jugar!</h1>
 
 <form method="post" action="/jugadorAPapel">
-	<input type="submit" value="Papel">	
+   <input type="submit" value="Papel">
+   <input type="submit" value="Piedra">	
+   <input type="submit" value="Tijera">	
 </form>
 
 <b>Opcion Elegida: <%= @opcionJugadorA %></b>
 <br>
 <b>Opcion Oponente: <%= @opcionJugadorB %></b>
+<b>Resultado: <%= @resultado %></b>
+<br>
+
+<form method="get" action="/">
+   <input type="submit" value="Reset">
+</form>
