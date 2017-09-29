@@ -69,4 +69,3 @@ Scenario:Debe verse mensaje ganador
 	When Una vez elegida la opcion piedra
 	Then tiene que aparecer "Resultado: ¡Ganaste!"
 
-
